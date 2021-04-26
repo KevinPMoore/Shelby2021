@@ -17,10 +17,12 @@ function bindDancingClick() {
     $('h1').addClass('hidden');
     $('.mainText').empty();
     $('.contentContainer').html(
-      `<div class='imgPlaceholder'></div>
-      <p class='dancingDescription'>
-        Forced to perform at a mysterious dance party, the spotlight shines on you! </br>
-        Will your moves steal the show or will you burn out in the starlight? </br>
+      `<p class='dancing'>
+        Forced to perform at a mysterious dance party, the spotlight shines on you!
+      </p>
+      <p class='dancing2'>
+        Will your moves steal the show or will you burn out in the starlight?
+      <p class='dancing3'>
         ITS SHOWTIME!
       </p>
       <button class='confirm'>I wanna dance!</button>
@@ -34,10 +36,13 @@ function bindPhotoClick() {
     $('h1').toggleClass('hidden');
     $('.mainText').empty();
     $('.contentContainer').html(
-      `<div class='imgPlaceholder'></div>
-      <p class='photoDescription'>
-        See a whole new world through the lens of your camera! </br>
-        Photograph the flora and fauna of dense jungles and vast deserts. </br>
+      `<p class='photo'>
+        See a whole new world through the lens of your camera!
+      </p>
+      <p class='photo2'>
+        Photograph the flora and fauna of dense jungles and vast deserts.
+      </p>
+      <p class='photo3'>
         You might even unravel the mysteries of the Illumina phenomenon!
       </p>
       <button class='confirm'>My camera is ready!</button>
@@ -60,13 +65,14 @@ function bindConfirm() {
 }
 
 function handleConfirmClick(choice) {
-  if (choice === 'dancingDescription') {
+  if (choice === 'dancing') {
     renderDance();
-  } else if (choice ==='photoDescription') {
+  } else if (choice ==='photo') {
     renderPhoto();
   }
 }
 
+//resume here
 function renderDance() {
   console.log('renderDance ran');
 }
