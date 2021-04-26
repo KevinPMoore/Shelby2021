@@ -3,17 +3,18 @@
 function initialContent() {
   $('h1').toggleClass('hidden');
   setTimeout(function () {
-    $('p.mainText').append('What type of content do you want to see?');
+    $('.contentContainer').html('<p class=\'mainText\'>What type of content do you want to see?</p>');
   }, 3000);
   setTimeout(function () {
     $('.contentContainer').append(
-      `<button class='dance'>Cool Dances</button> 
-      <button class='photo'>Cute Photos</>`);
+      `<p class='mainText'>Choose carefully</p>
+      <button class='danceButton'>Cool Dances</button> 
+      <button class='photoButton'>Cute Photos</>`);
   }, 6000);
 }
 
 function bindDancingClick() {
-  $('.contentContainer').on('click', '.dance', () => {
+  $('.contentContainer').on('click', '.danceButton', () => {
     $('h1').addClass('hidden');
     $('.mainText').empty();
     $('.contentContainer').html(
@@ -32,7 +33,7 @@ function bindDancingClick() {
 }
 
 function bindPhotoClick() {
-  $('.contentContainer').on('click', '.photo', () => {
+  $('.contentContainer').on('click', '.photoButton', () => {
     $('h1').toggleClass('hidden');
     $('.mainText').empty();
     $('.contentContainer').html(
@@ -100,6 +101,7 @@ function bindAllButtons() {
 }
 
 function main() {
+  confetti();
   initialContent();
   bindAllButtons();
 }

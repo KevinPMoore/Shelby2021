@@ -18,6 +18,7 @@ h1 {
     -webkit-background-clip: text;
     color: transparent;
     animation: rainbow 180s linear infinite;
+    text-align: center;
 }
 
 @keyframes rainbow {
@@ -32,4 +33,59 @@ p {
 
 .hidden {
     display: none;
+}
+
+.mainText {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2rem;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.contentContainer {
+    width: 92%;
+    height: 380px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.danceButton, .photoButton {
+    width: 180px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 24px;
+    font-size: 1rem;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+.dancing, .dancing2, .dancing3, .photo, .photo2, .photo3 {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.1rem;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 5s;
 }
