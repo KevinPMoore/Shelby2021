@@ -75,11 +75,21 @@ function handleConfirmClick(choice) {
 //resume here
 function renderDance() {
   console.log('renderDance ran');
+  $('.contentContainer').html(
+    `<div class='persona'>
+    
+    </div>`
+  );
 }
 
+//complete to mirror dance
 function renderPhoto() {
   console.log('renderPhoto ran');
-
+  $('.contentContainer').html(
+    `<div class='pokemon'>
+    
+    </div>`
+  );
 }
 
 function bindAllButtons() {
