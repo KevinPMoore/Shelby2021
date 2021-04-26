@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(https://wallpapercave.com/wp/wp2610854.png);
+    background-size: 100%;
+}
+
+h1 {
+    background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 180s linear infinite;
+}
+
+@keyframes rainbow {
+    to {
+        background-position: 4500vh;
+    }
+}
+
+p {
+    color: white
+}
+
+.hidden {
+    display: none;
+}
