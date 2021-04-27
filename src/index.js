@@ -20,7 +20,7 @@ function bindDancingClick() {
       $('.contentContainer').html('<p class=\'dancing\'>Forced to perform at a mysterious dance party, the spotlight shines on you!</p>');
     }, 1000);
     setTimeout(function() {
-      $('.contentContainer').append('<p class=\'dancing\'>Will your moves steal their hearts or will you burn out in the starlight?</p>');
+      $('.contentContainer').append('<p class=\'dancing\'>Will your moves steal their hearts, or will you burn out in the starlight?</p>');
     }, 4000);
     setTimeout(function() {
       $('.contentContainer').append('<p class=\'dancing\'>Its showtime!</p>');
@@ -86,22 +86,29 @@ function handleConfirmClick(choice) {
   }
 }
 
-//resume here
 function renderDance() {
-  console.log('renderDance ran');
+  $('h1').toggleClass('hidden');
+  $('h1').addClass('show');
   $('.contentContainer').html(
     `<div class='persona'>
-    
+      <audio autoplay>
+        <source src="./src/Yaaaaaaaaay.wav">
+        Sorry, your browser does not support the audio element.
+      </audio>
     </div>`
   );
 }
 
 //complete to mirror dance
 function renderPhoto() {
-  console.log('renderPhoto ran');
+  $('h1').toggleClass('hidden');
+  $('h1').addClass('show');
   $('.contentContainer').html(
     `<div class='pokemon'>
-    
+      <audio autoplay>
+        <source src="./src/Yaaaaaaaaay.wav">
+        Sorry, your browser does not support the audio element.
+      </audio>
     </div>`
   );
 }
