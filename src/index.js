@@ -1,7 +1,6 @@
 'use strict';
 
 function initialContent() {
-  $('h1').toggleClass('hidden');
   setTimeout(function () {
     $('.contentContainer').html('<p class=\'mainText\'>What type of content do you want to see?</p>');
   }, 3000);
@@ -69,6 +68,12 @@ function bindGoBack() {
 
 function bindConfirm() {
   $('.contentContainer').on('click', '.confirm', () => {
+    confetti({
+      particleCount: 4000,
+      spread: 90,
+      gravity: 0.8,
+      ticks: 400
+    });
     handleConfirmClick($('.contentContainer').find('p').attr('class'));
   });
 }
@@ -109,7 +114,6 @@ function bindAllButtons() {
 }
 
 function main() {
-  confetti();
   initialContent();
   bindAllButtons();
 }
