@@ -99,7 +99,6 @@ function renderDance() {
   );
 }
 
-//complete to mirror dance
 function renderPhoto() {
   $('h1').toggleClass('hidden');
   $('h1').addClass('show');
