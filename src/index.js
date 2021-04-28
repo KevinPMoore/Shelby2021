@@ -92,7 +92,7 @@ function renderDance() {
   $('.contentContainer').html(
     `<div class='persona'>
       <audio autoplay>
-        <source src="./src/Yaaaaaaaaay.wav">
+        <source src="./src/PersonaSong.mp3">
         Sorry, your browser does not support the audio element.
       </audio>
     </div>`
@@ -105,7 +105,7 @@ function renderPhoto() {
   $('.contentContainer').html(
     `<div class='pokemon'>
       <audio autoplay>
-        <source src="./src/Yaaaaaaaaay.wav">
+        <source src="./src/PokemonSong.mp3">
         Sorry, your browser does not support the audio element.
       </audio>
     </div>`
